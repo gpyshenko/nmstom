@@ -9,9 +9,14 @@
 @import "main/section.css";
 
 /* Components */
-
+@import "components/element/element.css";
+@import "components/buttons/burger.css";
+@import "components/social/social.css";
 
 /* Blocks */
-
+@import "blocks/header/header.css";
+@import "blocks/nav/nav.css";
+@import "blocks/menu/menu.css";
+@import "blocks/footer/footer.css";
 
 /* Pages */

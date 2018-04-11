@@ -1,71 +1,69 @@
 .header {
+    background: url("../assets/img/top-bg.jpg") center center no-repeat;
     &-top {
         display: flex;
-        background-color: var(--summerSky);
-    }
-    &-col {
-        width: 100%;
-        &:first-of-type {
-            max-width: 396px;
-        }
-        &:nth-of-type(2), &:last-of-type {
+        justify-content: space-between;
+        &-col {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-shrink: 1.5;
-            padding: 0 5px;
-        }
-        &:nth-of-type(2) {
-            max-width: 236px;
-            border-right: 1px solid var(--summerSky-dark);
-        }
-        &:last-of-type {
-            max-width: 224px;
         }
     }
-    &-bottom {
+    &-center {
+        width: 100%;
+        background-color: #fff;
+    }
+    &-main {
         position: relative;
-        height: 142px;
-        background: url("../assets/img/topbg.jpg") center center no-repeat;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
-    &-social {
-        position: absolute;
-        top: 22px;
-        right: 32px;
+    &-logo {
+        span {
+            display: none;
+            font-size: 28px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--gigas);
+        }
+    }
+    &-burger, &-phone {
+        display: none;
     }
 }
 @media (max-width: 992px) {
     .header {
-        &-col {
-            &:nth-of-type(2) {
-                max-width: 50px;
-            }
+        &-logo {
+            width: 140px;
         }
     }
 }
 @media (max-width: 767px) {
     .header {
         &-top {
-            flex-wrap: wrap;
+            display: none;
         }
-        &-col {
-            &:first-of-type {
-                order: 2;
-                max-width: 100%;
-
+        &-main {
+            height: 72px;
+        }
+        &-nav {
+            display: none;
+        }
+        &-burger, &-phone {
+            display: block;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .header {
+        &-logo {
+            width: auto;
+            img {
+                display: none;
             }
-            &:nth-of-type(2) {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                max-width: 90px;
-                height: 60px;
-                border-right: none;
-
-            }
-            &:last-of-type {
-                margin-left: auto;
-                max-width: calc(100% - 90px);
+            span {
+                display: block;
             }
         }
     }
