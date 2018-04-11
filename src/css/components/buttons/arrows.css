@@ -1,0 +1,43 @@
+.arrows {
+    position: relative;
+    display: flex;
+    width: 53px;
+    &-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 26px;
+        height: 24px;
+        font-size: 23px;
+        line-height: 13px;
+        color: #c7c7c7;
+        border: 1px solid #f2f2f2;
+        transition: .2s;
+        &.left {
+            border-right: none;
+            border-radius: 4px 0 0 4px;
+            &:active {
+                padding-right: 4px;
+            }
+        }
+        &.right {
+            border-left: none;
+            border-radius: 0 4px 4px 0;
+            &:active {
+                padding-left: 4px;
+            }
+        }
+        &:hover {
+            background-color: #f2f2f2;
+        }
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 26px;
+        width: 1px;
+        height: 100%;
+        background-color: #f2f2f2;
+    }
+}

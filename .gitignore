@@ -1,0 +1,6 @@
+node_modules/
+dist/
+PSD/
+
+# Editor directories and files
+.idea

@@ -1,0 +1,11 @@
+.slider {
+    position: relative;
+    &-controls {
+        position: absolute;
+        bottom: calc(100% + 26px);
+        right: 0;
+    }
+    &-item {
+        padding-right: 36px;
+    }
+}

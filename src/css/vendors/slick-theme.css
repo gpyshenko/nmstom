@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+:root {
+    --slick-opacity-on-hover: 1;
+}
+
+/* Arrows */
+.slick-prev,
+.slick-next {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    height: 28px;
+    width: 28px;
+    font-size: 0;
+    cursor: pointer;
+    top: 50%;
+    transform: translate(0, -50%);
+    background: transparent;
+    outline: none;
+    &:hover, &:focus {
+        outline: none;
+        color: transparent;
+        &:before {
+            opacity: var(--slick-opacity-on-hover);
+        }
+    }
+}
+
+.slick-prev {
+    left: 0;
+
+}
+
+.slick-next {
+    right: 0;
+}
+
+.slick-dots {
+    position: absolute;
+    top: calc(100% + 47px);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    list-style: none;
+    li {
+        position: relative;
+        width: 8px;
+        height: 8px;
+        margin: 0 8px;
+        font-size: 0;
+        cursor: pointer;
+        button {
+            width: 8px;
+            height: 8px;
+            padding: 0;
+            background-color: #aaa9a9;
+            border-radius: 50%;
+            outline: none;
+        }
+        &.slick-active {
+            button {
+                background-color: var(--brandRed);
+            }
+        }
+    }
+}

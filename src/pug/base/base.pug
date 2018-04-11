@@ -1,0 +1,10 @@
+doctype html
+html
+    include head
+    body
+        .wrapper
+            include ../blocks/header/header
+            main.main
+                block main
+            include ../blocks/footer/footer
+        script(src="./js/bundle.min.js")

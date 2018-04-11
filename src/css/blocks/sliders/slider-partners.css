@@ -1,0 +1,37 @@
+.sliderPartners {
+    position: relative;
+    padding-left: 30px;
+    overflow: hidden;
+    &::before {
+        content: url("../assets/img/mouse.png");
+        position: absolute;
+        top: calc(50% - 14px);
+        left: 10px;
+        z-index: 4;
+    }
+    &::after {
+        content: url("../assets/img/whiteshadow.png");
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 4;
+        height: 100%;
+        opacity: .75;
+    }
+    &-item {
+        padding: 0 30px;
+    }
+    .slick {
+        &-track {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .sliderPartners {
+        &::after {
+            right: -80px;
+        }
+    }
+}

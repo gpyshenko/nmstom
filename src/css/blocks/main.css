@@ -1,0 +1,24 @@
+.main {
+    width: calc(100% - 255px);
+    background-color: #fff;
+    &-section {
+        padding: 28px 30px 45px;
+
+    }
+    hr {
+        width: calc(100% - 60px);
+        height: 1px;
+        padding: 0;
+        margin: 0 auto;
+        background-color: var(--whiteSmoke);
+        border: none;
+    }
+}
+@media (max-width: 767px) {
+    .main {
+        width: 100%;
+        &-section {
+            padding-left: 15px;
+        }
+    }
+}

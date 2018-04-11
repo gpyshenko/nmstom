@@ -1,0 +1,28 @@
+.searchHeader {
+    position: relative;
+    height: 65px;
+    input {
+        width: 100%;
+        height: 100%;
+        padding: 0 40px 0 30px;
+        color: #fff;
+        background-color: var(--summerSky-dark);
+        &::placeholder {
+            color: #fff;
+        }
+    }
+    &-btn {
+        position: absolute;
+        top: calc(50% - 11px);
+        right: 20px;
+        font-size: 18px;
+        color: #fff;
+    }
+}
+@media (max-width: 992px) {
+    .searchHeader {
+        input {
+            padding-left: 15px;
+        }
+    }
+}

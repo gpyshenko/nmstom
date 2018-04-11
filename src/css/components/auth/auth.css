@@ -1,0 +1,17 @@
+.auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-item {
+        display: flex;
+        align-items: center;
+        margin: 0 8px;
+        color: #fff;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &-icon {
+        margin-right: 10px;
+    }
+}

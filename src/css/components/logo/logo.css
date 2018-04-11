@@ -1,0 +1,13 @@
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 0 9px;
+    background-color: var(--whiteSmoke);
+    &-text {
+        margin-left: 14px;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: var(--summerSky);
+    }
+}
