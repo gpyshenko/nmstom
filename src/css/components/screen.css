@@ -1,0 +1,27 @@
+.screen {
+    &.sponsors {
+        padding: 46px 0 38px;
+        background: url("../assets/img/sponsors_bg.png") center top 22px no-repeat;
+    }
+    &.bg {
+        padding: 56px 0 80px;
+        background-color: #f7f7f7;
+    }
+    &-head {
+        margin-bottom: 50px;
+    }
+    &-body:not(:last-of-type) {
+        margin-bottom: 104px;
+    }
+}
+
+@media (max-width: 575px) {
+    .screen {
+        &.sponsors {
+            background-image: none;
+        }
+        &-head {
+            margin-bottom: 30px;
+        }
+    }
+}

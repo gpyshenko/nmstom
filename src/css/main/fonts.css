@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'Roboto';
     src:
-            url('../assets/fonts/Roboto-Light/RobotoLight.woff2') format('woff2'),
-            url('../assets/fonts/Roboto-Light/RobotoLight.woff') format('woff');
+            url('../assets/fonts/Roboto/RobotoLight.woff2') format('woff2'),
+            url('../assets/fonts/Roboto/RobotoLight.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
@@ -10,8 +10,8 @@
 @font-face {
     font-family: 'Roboto';
     src:
-            url('../assets/fonts/Roboto-Regular/RobotoRegular.woff2') format('woff2'),
-            url('../assets/fonts/Roboto-Regular/RobotoRegular.woff') format('woff');
+            url('../assets/fonts/Roboto/RobotoRegular.woff2') format('woff2'),
+            url('../assets/fonts/Roboto/RobotoRegular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
@@ -19,8 +19,8 @@
 @font-face {
     font-family: 'Roboto';
     src:
-            url('../assets/fonts/Roboto-Medium/RobotoMedium.woff2') format('woff2'),
-            url('../assets/fonts/Roboto-Medium/RobotoMedium.woff') format('woff');
+            url('../assets/fonts/Roboto/RobotoMedium.woff2') format('woff2'),
+            url('../assets/fonts/Roboto/RobotoMedium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
@@ -28,8 +28,8 @@
 @font-face {
     font-family: 'Roboto';
     src:
-            url('../assets/fonts/Roboto-Bold/RobotoBold.woff2') format('woff2'),
-            url('../assets/fonts/Roboto-Bold/RobotoBold.woff') format('woff');
+            url('../assets/fonts/Roboto/RobotoBold.woff2') format('woff2'),
+            url('../assets/fonts/Roboto/RobotoBold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 }
@@ -37,9 +37,27 @@
 @font-face {
     font-family: 'Roboto';
     src:
-            url('../assets/fonts/Roboto-Black/RobotoBlack.woff2') format('woff2'),
-            url('../assets/fonts/Roboto-Black/RobotoBlack.woff') format('woff');
+            url('../assets/fonts/Roboto/RobotoBlack.woff2') format('woff2'),
+            url('../assets/fonts/Roboto/RobotoBlack.woff') format('woff');
     font-weight: 900;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'PancettaSerif';
+    src:
+            url('../assets/fonts/PancettaSerif/PancettaSerifProSemiBold.woff2') format('woff2'),
+            url('../assets/fonts/PancettaSerif/PancettaSerifProSemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PancettaSerif';
+    src:
+            url('../assets/fonts/PancettaSerif/PancettaSerifProBold.woff2') format('woff2'),
+            url('../assets/fonts/PancettaSerif/PancettaSerifProBold.woff') format('woff');
+    font-weight: 800;
     font-style: normal;
 }
 

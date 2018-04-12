@@ -23,25 +23,62 @@ $(document).ready(function () {
         }
     });
 
-    var headerFixed = document.querySelector('.js-headerFixed');
+    // Фиксирование шапки
+    var headerFixed = document.querySelector('.js-headerFixed'),
+        headerCenter = document.querySelector('.js-headerCenter');
     if(headerFixed) {
         new Waypoint({
-            element: $('.header-center'),
+            element: headerCenter,
             handler: function() {
                 headerFixed.classList.toggle('fixed');
             },
             offset: 1
         });
     }
+
+    var sponsorsSlider = $('.js-sponsorsSlider');
+    function installSponsorsSlider() {
+        sponsorsSlider.slick({
+            dots: false,
+            arrows: false,
+            infinite: false,
+            autoplay: false,
+            speed: 500,
+            slidesToShow: 4,
+            responsive: [
+                {
+                    breakpoint: 640,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 495,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                }
+            ]
+        });
+    }
+    // Медиа выражения
     var tabletRes = window.matchMedia('(max-width: 767px)');
 
+    // Проверка разрешения при загрузке
+    if(tabletRes.matches) {
+        installSponsorsSlider();
+    }
+
+    // Изменение при ресайзе
     function changeResize(e) {
         if (!e.matches) {
             toggleDisplay(menu,'none');
             menu.classList.remove('opened');
+            sponsorsSlider.slick('unslick');
+        } else {
+            installSponsorsSlider();
         }
     }
-
     tabletRes.addListener(changeResize);
 });
 

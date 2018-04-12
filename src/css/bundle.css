@@ -11,6 +11,8 @@
 /* Components */
 @import "components/element/element.css";
 @import "components/buttons/burger.css";
+@import "components/screen.css";
+@import "components/titles/title.css";
 @import "components/social/social.css";
 
 /* Blocks */
@@ -18,6 +20,8 @@
 @import "blocks/nav/nav.css";
 @import "blocks/menu/menu.css";
 @import "blocks/board/board.css";
+@import "blocks/sponsors/sponsors.css";
+@import "blocks/await/await.css";
 @import "blocks/footer/footer.css";
 
 /* Pages */

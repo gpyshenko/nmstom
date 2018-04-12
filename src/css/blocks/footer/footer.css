@@ -79,5 +79,8 @@
         &-top {
             display: none;
         }
+        &-center {
+            height: 455px;
+        }
     }
 }

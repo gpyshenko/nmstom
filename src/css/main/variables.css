@@ -1,5 +1,8 @@
 :root {
     --gigas: #59448a;
-    --matterhorn : #565656;
+    --matterhorn: #565656;
     --blackCurrant: #3c1053;
+    --pumpkin: #f06322;
+
+    --PancettaSerif: 'PancettaSerif', sans-serif;
 }

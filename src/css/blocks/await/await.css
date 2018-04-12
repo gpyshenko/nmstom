@@ -1,0 +1,135 @@
+.await {
+    display: flex;
+    width: 100%;
+    &-col {
+        width: 100%;
+        max-width: 570px;
+        &:first-of-type {
+            margin-right: 30px;
+        }
+    }
+    &-item {
+        position: relative;
+        z-index: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px 44px;
+        overflow: hidden;
+        &.big {
+            height: 390px;
+            font-size: 28px;
+        }
+        &.small {
+            height: 180px;
+            margin-bottom: 30px;
+            font-size: 22px;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            background-color: var(--blackCurrant);
+            opacity: .5;
+        }
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            max-width: none;
+            transition: .4s;
+        }
+        &:hover {
+            img {
+                transform: scale(1.12);
+            }
+        }
+    }
+    &-title {
+        font-weight: 700;
+        color: #fff;
+    }
+    &-note {
+        font-size: 16px;
+        color: #fff;
+    }
+}
+@media (max-width: 992px) {
+    .await {
+        &-item {
+            padding: 15px;
+        }
+        &-title {
+            font-size: 20px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .await {
+        display: block;
+        &-col {
+            max-width: 100%;
+            &:first-of-type {
+                margin-right: 0;
+            }
+            &:last-of-type {
+                display: flex;
+            }
+        }
+        &-item {
+            padding: 15px;
+            &.big {
+                height: 200px;
+            }
+            &.small {
+                width: 50%;
+                &:first-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        &-title {
+            font-size: 18px;
+        }
+        &-note {
+            font-size: 12px;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .await {
+        &-col {
+            max-width: 100%;
+            &:first-of-type {
+                margin-bottom: 10px;
+            }
+            &:last-of-type {
+                display: block;
+            }
+        }
+        &-item {
+            padding: 18px 22px;
+            &.big,&.small {
+                height: auto;
+                min-height: 160px;
+            }
+            &.small {
+                width: 100%;
+                &:first-of-type {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        &-note {
+            margin-top: 22px;
+        }
+    }
+}
