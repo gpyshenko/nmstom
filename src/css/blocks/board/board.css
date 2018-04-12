@@ -1,0 +1,44 @@
+.board {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 170px 0 230px;
+    color: #fff;
+    &-play {
+
+    }
+    &-info {
+        max-width: 525px;
+    }
+    &-title {
+        margin-bottom: 60px;
+        font-size: 51px; /* 52px */
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &-date {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    &-phone {
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    &-registration {
+        padding: 19px 23px;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        color: inherit;
+        border: 3px solid #fff;
+        border-radius: 4px;
+    }
+    &-mouse {
+        position: absolute;
+        bottom: 42px;
+        left: calc(50% - 12px);
+    }
+}

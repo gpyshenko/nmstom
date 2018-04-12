@@ -1,32 +1,48 @@
 $(document).ready(function () {
-// Кнопка меню
-    $('.js-burger').click(function () {
-        $('.js-menu').fadeToggle();
+    // Изменение стиля display
+    function toggleDisplay(el,val) {
+        el.style.display = val;
+    }
+
+    // Кнопка меню
+    var burgerBtn = document.querySelector('.js-burger'),
+        menu = document.querySelector('.js-menu');
+
+    burgerBtn.addEventListener('click', function () {
+        if(menu.classList.contains('opened')) {
+            menu.classList.remove('opened');
+            setTimeout(function () {
+                toggleDisplay(menu,'none');
+            }, 600)
+        } else {
+            toggleDisplay(menu,'block');
+            setTimeout(function () {
+                menu.classList.add('opened')
+            }, 100)
+
+        }
     });
 
-    function changeWaypoint(top) {
+    var headerFixed = document.querySelector('.js-headerFixed');
+    if(headerFixed) {
         new Waypoint({
-            element: $('.header-top'),
-            handler: function(direction) {
-                console.log('asd');
-                $('.js-headerFixed').toggleClass('fixed')
+            element: $('.header-center'),
+            handler: function() {
+                headerFixed.classList.toggle('fixed');
             },
-            offset: top
+            offset: 1
         });
     }
+    var tabletRes = window.matchMedia('(max-width: 767px)');
 
-    var winWidth = $( window ).outerWidth();
-    function listenMQ() {
-        if(winWidth < 768) {
-            changeWaypoint(0)
-        } else if(winWidth > 768) {
-            changeWaypoint(-52)
+    function changeResize(e) {
+        if (!e.matches) {
+            toggleDisplay(menu,'none');
+            menu.classList.remove('opened');
         }
     }
-    listenMQ();
-    $(window).resize(function() {
-        listenMQ();
-    });
+
+    tabletRes.addListener(changeResize);
 });
 
 
