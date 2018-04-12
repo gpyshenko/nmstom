@@ -8,15 +8,16 @@ header.header
             include ../../components/elements/lang
             include ../../components/elements/auth
     .header-center
-        .section.header-main
-            .header-burger
-                include ../../components/buttons/burger
-            a(href="").header-logo
-                img(src="assets/img/logo.png" alt="")
-                span Iccmo
-            a(href="").header-phone
-                img(src="assets/img/icons/phone2.png" alt="")
-            .header-nav
-                include ../../blocks/nav/nav
-            include ../../blocks/menu/menu
+        .header-fixed.js-headerFixed
+            .section.header-main
+                .header-burger
+                    include ../../components/buttons/burger
+                a(href="").header-logo
+                    img(src="assets/img/logo.png" alt="")
+                    span Iccmo
+                a(href="").header-phone
+                    img(src="assets/img/icons/phone2.png" alt="")
+                .header-nav
+                    include ../../blocks/nav/nav
+                include ../../blocks/menu/menu
     .section.header-bottom

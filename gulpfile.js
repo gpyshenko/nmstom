@@ -42,6 +42,7 @@ gulp.task('css-watch', ['css']);
 gulp.task('js', function () {
     return gulp.src([
         './src/js/vendors/jquery-3.3.1.min.js',
+        './src/js/vendors/jquery.waypoints.min.js',
         './src/js/vendors/slick.min.js',
         './src/js/main.js'
     ])
