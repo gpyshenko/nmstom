@@ -1,0 +1,72 @@
+.catch {
+    display: flex;
+    align-items: center;
+    height: 540px;
+    text-align: center;
+    color: #fff;
+    background: #66579e url("../assets/img/waves.png") center center no-repeat;
+    transition: .4s;
+    &-title {
+        margin-bottom: 52px;
+        font-family: var(--PancettaSerif);
+        font-size: 72px;
+        font-weight: 600;
+        transition: .4s;
+    }
+    &-btn {
+        height: 65px;
+        padding: 0 27px;
+        margin-bottom: 64px;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--gigas);
+        background-color: #fff;
+        border: 3px solid #fff;
+        border-radius: 4px;
+        transition: .3s;
+        &:hover {
+            color: #fff;
+            background-color: transparent;
+        }
+    }
+    &-note {
+        font-size: 18px;
+        transition: .4s;
+    }
+}
+
+@media (max-width: 992px) {
+    .catch {
+        height: 440px;
+        &-title {
+            font-size: 52px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .catch {
+        height: 400px;
+        &-title {
+            font-size: 42px;
+        }
+        &-btn {
+            height: 60px;
+            font-size: 18px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .catch {
+        height: 340px;
+        &-title {
+            font-size: 32px;
+        }
+        &-btn {
+            margin-bottom: 40px;
+            font-size: 16px;
+        }
+    }
+}
