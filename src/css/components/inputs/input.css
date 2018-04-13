@@ -1,0 +1,50 @@
+.input {
+    margin-bottom: 14px;
+    input, textarea {
+        width: 100%;
+        font-size: 18px;
+        font-weight: 300;
+        color: #fff;
+        border: none;
+        outline: none;
+        &::placeholder {
+            color: inherit;
+        }
+    }
+    input {
+        height: 54px;
+        padding: 0 17px;
+    }
+    textarea {
+        height: 112px;
+        padding: 19px 17px;
+        resize: none;
+    }
+    &.inverse {
+        input,textarea {
+            background-color: rgba(255,255,255,.1);
+            border-bottom: 2px solid #e1e1e1;
+        }
+    }
+    &-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .input {
+            width: calc(50% - 8px);
+            &:first-of-type {
+                margin-right: 16px;
+            }
+        }
+    }
+}
+@media (max-width: 575px) {
+    .input {
+        &-row {
+            display: block;
+            .input {
+                width: 100%;
+            }
+        }
+    }
+}

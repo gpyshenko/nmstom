@@ -11,8 +11,11 @@
 /* Components */
 @import "components/element/element.css";
 @import "components/buttons/burger.css";
+@import "components/buttons/submit.css";
 @import "components/screen.css";
 @import "components/titles/title.css";
+@import "components/inputs/input.css";
+@import "components/inputs/checkbox.css";
 @import "components/social/social.css";
 
 /* Blocks */
@@ -22,6 +25,7 @@
 @import "blocks/board/board.css";
 @import "blocks/sponsors/sponsors.css";
 @import "blocks/await/await.css";
+@import "blocks/ask/ask.css";
 @import "blocks/catch/catch.css";
 @import "blocks/footer/footer.css";
 

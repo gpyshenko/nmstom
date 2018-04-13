@@ -1,0 +1,17 @@
+.submitBtn {
+    width: 230px;
+    height: 40px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    transition: .4s;
+    &.inverse {
+        color: #fff;
+        background-color: var(--pumpkin);
+    }
+}
+
+@media (max-width: 420px) {
+    .submitBtn {
+        width: 100%;
+    }
+}

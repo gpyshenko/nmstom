@@ -58,7 +58,7 @@
         }
     }
 }
-@media (max-width: 767px) {
+@media (max-width: 575px) {
     .catch {
         height: 340px;
         &-title {
@@ -68,5 +68,10 @@
             margin-bottom: 40px;
             font-size: 16px;
         }
+    }
+}
+@media (max-width: 480px) {
+    .catch {
+        display: none;
     }
 }
