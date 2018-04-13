@@ -6,6 +6,7 @@
         font-weight: 300;
         color: #fff;
         border: none;
+        transition: .2s;
         outline: none;
         &::placeholder {
             color: inherit;
@@ -21,9 +22,12 @@
         resize: none;
     }
     &.inverse {
-        input,textarea {
+        input, textarea {
             background-color: rgba(255,255,255,.1);
             border-bottom: 2px solid #e1e1e1;
+            &:focus {
+                border-color: var(--pumpkin);
+            }
         }
     }
     &-row {

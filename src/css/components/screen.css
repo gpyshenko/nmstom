@@ -1,4 +1,5 @@
 .screen {
+    padding: 75px 0;
     &.sponsors {
         padding: 46px 0 38px;
         background: url("../assets/img/sponsors_bg.png") center top 22px no-repeat;
