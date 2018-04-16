@@ -1,5 +1,10 @@
 .tickets
-    .tickets-list
-        include ../../components/ticket/ticket
+    .tickets-list.js-ticketsSlider
+        mixin ticketsItem
+            .tickets-item
+                include ../../components/ticket/ticket
+        +ticketsItem
+        +ticketsItem
+        +ticketsItem
     .tickets-controls
         a(href="").tickets-link Смотреть все билеты

@@ -80,6 +80,30 @@ $(document).ready(function () {
         }
     }
     tabletRes.addListener(changeResize);
+
+    var titcketsSlider = $('.js-ticketsSlider');
+    titcketsSlider.slick({
+        dots: false,
+        arrows: false,
+        infinite: false,
+        autoplay: false,
+        speed: 500,
+        slidesToShow: 3,
+        responsive: [
+            {
+                breakpoint: 1140,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
 });
 
 
